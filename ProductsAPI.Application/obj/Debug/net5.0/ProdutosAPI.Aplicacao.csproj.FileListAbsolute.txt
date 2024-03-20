@@ -1,0 +1,17 @@
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Aplicacao.deps.json
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Aplicacao.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Aplicacao.pdb
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Dominio.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Infra.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Dominio.pdb
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\bin\Debug\net5.0\ProdutosAPI.Infra.pdb
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.csproj.AssemblyReference.cache
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.AssemblyInfoInputs.cache
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.AssemblyInfo.cs
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.csproj.CoreCompileInputs.cache
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.csproj.CopyComplete
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\refint\ProdutosAPI.Aplicacao.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ProdutosAPI.Aplicacao.pdb
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Application\obj\Debug\net5.0\ref\ProdutosAPI.Aplicacao.dll

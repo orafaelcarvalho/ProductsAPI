@@ -1,0 +1,12 @@
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\bin\Debug\net5.0\ProdutosAPI.Dominio.deps.json
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\bin\Debug\net5.0\ProdutosAPI.Dominio.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\bin\Debug\net5.0\ProdutosAPI.Dominio.pdb
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.csproj.AssemblyReference.cache
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.AssemblyInfoInputs.cache
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.AssemblyInfo.cs
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.csproj.CoreCompileInputs.cache
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\refint\ProdutosAPI.Dominio.dll
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ProdutosAPI.Dominio.pdb
+D:\Projetos\Autoglass\ProductsAPI\ProductsAPI.Domain\obj\Debug\net5.0\ref\ProdutosAPI.Dominio.dll
