@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using ProductsAPI.Domain.Entities;
 using ProductsAPI.Domain.Enums;
+using ProductsAPI.Domain.Interfaces;
 using ProductsAPI.Infra.DataContext;
 using ProductsAPI.Infra.DbSession;
-using ProductsAPI.Infra.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace ProductsAPI.Infra.Repositories
 
         public ProductRepository(ProductsDataContext dbContext, IDbSessionDapper context)
         {
-            if (dbContext == null)
+            if (dbContext == null || context == null)
             {
                 throw new ArgumentNullException(nameof(dbContext), "Falha ao acessar o banco de dados.");
             }

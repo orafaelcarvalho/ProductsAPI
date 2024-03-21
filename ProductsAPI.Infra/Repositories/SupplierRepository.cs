@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProductsAPI.Domain.Entities;
+using ProductsAPI.Domain.Interfaces;
 using ProductsAPI.Infra.DataContext;
-using ProductsAPI.Infra.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

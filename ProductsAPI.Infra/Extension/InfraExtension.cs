@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using ProductsAPI.Domain.Interfaces;
 using ProductsAPI.Infra.DataContext;
 using ProductsAPI.Infra.DbSession;
-using ProductsAPI.Infra.Interfaces;
 using ProductsAPI.Infra.Repositories;
 using SupplierAPI.Infra.Repositories;
 
