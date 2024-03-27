@@ -1,4 +1,5 @@
-﻿using ProductsAPI.Domain.Enums;
+﻿using ProductsAPI.Domain.Entities;
+using ProductsAPI.Domain.Enums;
 using System;
 
 namespace ProductsAPI.Application.DTOs
@@ -16,5 +17,6 @@ namespace ProductsAPI.Application.DTOs
         public DateTime ExpiryDate { get; set; }
 
         public int SupplierCode { get; set; }
+        public SupplierDto Supplier { get; set; }
     }
 }

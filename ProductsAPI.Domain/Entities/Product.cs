@@ -21,6 +21,7 @@ namespace ProductsAPI.Domain.Entities
         [Column("expirationdate", TypeName = "DATETIME")]
         public DateTime ExpirationDate { get; private set; }
 
+        [ForeignKey("Supplier")]
         [Column("suppliercode", TypeName = "INT")]
         public int SupplierCode { get; private set; }
         public virtual Supplier Supplier { get; private set; }        

@@ -31,7 +31,10 @@ namespace ProductsAPI.Infra.Repositories
 
         public async Task<Product> GetByCodeAsync(int code)
         {
-            return await _dbSet.Where(x => x.Code == code).FirstOrDefaultAsync();
+            return await _dbSet
+                .Where(x => x.Code == code)
+                .Include(p => p.Supplier)
+                .FirstOrDefaultAsync();
         }
 
         public async Task<List<Product>> GetPaginatedAsync(int quantity, int page)
@@ -39,6 +42,7 @@ namespace ProductsAPI.Infra.Repositories
             int selectedPage = (page - 1) * quantity;
             List<Product> list = await _dbSet
                 .AsNoTracking()
+                .Include(p => p.Supplier)
                 .Where(p => p.Status == ProductStatus.Active)
                 .Skip(selectedPage)
                 .Take(quantity)
