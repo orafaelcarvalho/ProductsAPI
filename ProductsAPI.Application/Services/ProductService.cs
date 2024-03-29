@@ -3,6 +3,7 @@ using ProductsAPI.Application.DTOs;
 using ProductsAPI.Application.Interfaces;
 using ProductsAPI.Domain.Constants;
 using ProductsAPI.Domain.Entities;
+using ProductsAPI.Domain.Enums;
 using ProductsAPI.Domain.Exceptions;
 using ProductsAPI.Domain.Interfaces;
 using ProductsAPI.Domain.Models;
@@ -34,7 +35,8 @@ namespace ProductsAPI.Application.Services
         public async Task<ProductDto> GetByCodeAsync(int code)
         {
             Product product = await _productRepository.GetByCodeAsync(code);
-            if (product is null)
+            if (product is null || 
+                product.Status == ProductStatus.Inactive)
             {
                 throw new RecordNotFoundException("Product", Messages.RecordNotFound);
             }
@@ -78,9 +80,8 @@ namespace ProductsAPI.Application.Services
                 if (product is null)
                 {
                     throw new RecordNotFoundException("Product", Messages.RecordNotFound);
-                }
-                product.MarkAsDeleted();
-                await _productRepository.UpdateAsync(product);
+                }                
+                await _productRepository.DeleteAsync(product);
             }
             catch (Exception)
             {

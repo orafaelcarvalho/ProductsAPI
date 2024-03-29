@@ -11,7 +11,7 @@ namespace ProductsAPI.Application.Extensions
     {
         public static IServiceCollection AddApplicationExtensions(this IServiceCollection services)
         {
-            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductService, ProductServiceSoftDeleteDecorator>();
             services.AddScoped<ISupplierService, SupplierService>();
 
             MapperConfiguration config = new MapperConfiguration(cfg =>
