@@ -6,6 +6,7 @@ using ProductsAPI.Domain.Entities;
 using ProductsAPI.Domain.Exceptions;
 using ProductsAPI.Domain.Interfaces;
 using ProductsAPI.Domain.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ProductsAPI.Application.Services
@@ -13,13 +14,17 @@ namespace ProductsAPI.Application.Services
     public class ProductServiceSoftDeleteDecorator : IProductService
     {
         private readonly IProductService _productService;
-        private readonly IProductRepository _productRepository;
-        private readonly IMapper _mapper;
+        private readonly IProductRepository _productRepository;        
 
         public ProductServiceSoftDeleteDecorator(IMapper mapper, IProductRepository productRepository)
         {
             _productService = new ProductService(mapper, productRepository);
             _productRepository = productRepository;
+        }
+
+        public async Task<List<ProductDto>> GetAllAsync()
+        {
+            return await _productService.GetAllAsync();
         }
 
         public async Task<Pagination<ProductDto>> GetPaginatedAsync(int quantity, int page)

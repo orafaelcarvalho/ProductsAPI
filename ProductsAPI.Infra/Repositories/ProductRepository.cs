@@ -37,6 +37,17 @@ namespace ProductsAPI.Infra.Repositories
                 .FirstOrDefaultAsync();
         }
 
+        public async Task<Product> GetByCodeDapperAsync(int code)
+        {
+            using (var conn = _conn.Connection)
+            {
+                string query = "SELECT * FROM PRODUCT WHERE CODE = @code";
+                Product product = await conn.QueryFirstOrDefaultAsync<Product>(sql: query, param: new { code });
+
+                return product;
+            }
+        }
+
         public async Task<List<Product>> GetPaginatedAsync(int quantity, int page)
         {
             int selectedPage = (page - 1) * quantity;
@@ -48,6 +59,11 @@ namespace ProductsAPI.Infra.Repositories
                 .Take(quantity)
                 .ToListAsync();
             return list;
+        }
+
+        public async Task<List<Product>> GetAllAsync()
+        {
+            return await _dbSet.ToListAsync();
         }
 
         public async Task AddAsync(Product product)
@@ -66,17 +82,6 @@ namespace ProductsAPI.Infra.Repositories
         {
             _dbSet.Remove(product);
             await _db.SaveChangesAsync();
-        }
-
-        public async Task<Product> GetByCodeDapperAsync(int code)
-        {
-            using (var conn = _conn.Connection)
-            {
-                string query = "SELECT * FROM PRODUCT WHERE CODE = @code";
-                Product product = await conn.QueryFirstOrDefaultAsync<Product>(sql: query, param: new { code });
-
-                return product;
-            }
         }
     }
 }

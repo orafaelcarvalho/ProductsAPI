@@ -24,6 +24,12 @@ namespace ProductsAPI.Application.Services
             _productRepository = productRepository;
         }
 
+        public async Task<List<ProductDto>> GetAllAsync()
+        {
+            List<Product> products = await _productRepository.GetAllAsync();
+            return _mapper.Map<List<Product>, List<ProductDto>>(products);
+        }
+
         public async Task<Pagination<ProductDto>> GetPaginatedAsync(int quantity, int page)
         {
             List<Product> products = await _productRepository.GetPaginatedAsync(quantity, page);

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductsAPI.Application.DTOs;
 using ProductsAPI.Application.Interfaces;
+using ProductsAPI.Application.Services;
 using ProductsAPI.Domain.Constants;
 using ProductsAPI.Domain.Entities;
 using ProductsAPI.Domain.Exceptions;
@@ -29,6 +30,20 @@ namespace ProductsAPI.API.Controllers
             try
             {
                 Pagination<ProductDto> response = await _productService.GetPaginatedAsync(quantity, page);
+                return StatusCode(StatusCodes.Status200OK, response);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<ProductDto>>> GetAllProducts()
+        {
+            try
+            {
+                List<ProductDto> response = await _productService.GetAllAsync();
                 return StatusCode(StatusCodes.Status200OK, response);
             }
             catch (Exception e)
