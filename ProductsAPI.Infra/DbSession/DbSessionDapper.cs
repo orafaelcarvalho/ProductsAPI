@@ -9,8 +9,8 @@ namespace ProductsAPI.Infra.DbSession
 
         public DbSessionDapper()
         {
-            Connection = new SqlConnection("Server=localhost;Database=Products;User Id=sa;Password=123456;");
-            Connection.Open();
+            Connection = new SqlConnection("Server=localhost;Database=Products;User Id=sa;Password=123456;TrustServerCertificate=true;");
+            Connection.Open();            
         }
 
         public void Dispose() => Connection?.Close();

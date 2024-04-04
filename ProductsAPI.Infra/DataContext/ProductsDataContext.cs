@@ -7,7 +7,7 @@ namespace ProductsAPI.Infra.DataContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=Products;User Id=sa;Password=123456;");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=Products;User Id=sa;Password=123456;TrustServerCertificate=true;");
         }
 
         public DbSet<Product> Products { get; set; }

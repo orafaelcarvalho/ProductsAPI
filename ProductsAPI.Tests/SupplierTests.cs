@@ -1,7 +1,5 @@
 ﻿using ProductsAPI.Domain.Entities;
 using ProductsAPI.Domain.Exceptions;
-using ProductsAPI.Domain.Exceptions;
-using System;
 using Xunit;
 
 namespace ProductsAPI.Tests

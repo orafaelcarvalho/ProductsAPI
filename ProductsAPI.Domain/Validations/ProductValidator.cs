@@ -1,5 +1,4 @@
-﻿using ProductsAPI.Domain.Entities;
-using ProductsAPI.Domain.Enums;
+﻿using ProductsAPI.Domain.Enums;
 using ProductsAPI.Domain.Exceptions;
 using System;
 

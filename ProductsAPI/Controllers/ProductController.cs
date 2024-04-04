@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductsAPI.Application.DTOs;
 using ProductsAPI.Application.Interfaces;
-using ProductsAPI.Application.Services;
 using ProductsAPI.Domain.Constants;
 using ProductsAPI.Domain.Entities;
 using ProductsAPI.Domain.Exceptions;
@@ -70,7 +69,7 @@ namespace ProductsAPI.API.Controllers
             }
         }
 
-        [HttpGet("Dapper/{code}")]
+        [HttpGet("dapper/{code}")]
         public async Task<ActionResult<ProductDto>> GetProductByCodeDapper(int code)
         {
             try
