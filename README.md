@@ -1,7 +1,7 @@
 Projeto .NET 5 DDD Web API - Controle de Produtos e Fornecedores
 
 Este projeto é uma aplicação de exemplo desenvolvida em .NET 5 utilizando a arquitetura DDD (Domain-Driven Design) para gerenciamento de produtos e seus respectivos fornecedores.
-O objetivo deste projeto é fornecer uma base sólida para entender e praticar os princípios do DDD em uma aplicação Web API.
+O objetivo deste projeto é fornecer uma base sólida para entender e praticar os princípios do DDD em uma aplicação Web API, enquanto também utilizei o projeto como uma oportunidade para aprofundar minha compreensão e prática dos princípios do SOLID.
 
 Funcionalidades:
 - Cadastro, atualização, remoção e consulta de produtos.
